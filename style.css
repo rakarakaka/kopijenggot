@@ -25,6 +25,12 @@ body {
     font-weight: bold;
     padding-left: 50px;
 }
+
+.brand-link {
+    text-decoration: none;
+    color: inherit; /* Inherit color from parent (.header) */
+}
+
 nav a {
     color: #fff;
     text-decoration: none;
@@ -146,6 +152,13 @@ nav a:hover {
     flex-grow: 1; /* Allow about section to grow and push footer down */
 }
 
+.about-image {
+    max-width: 100%; /* Ensure image is responsive */
+    height: auto;
+    display: block;
+    margin: 0 auto 40px auto; /* Center image and add bottom spacing */
+}
+
 .about-section h2 {
     font-family: 'Coolvetica Condensed', 'Coolvetica', Arial, sans-serif;
     font-size: 3.5rem;
@@ -159,6 +172,15 @@ nav a:hover {
     line-height: 1.6;
     max-width: 800px;
     margin: 0 auto 15px auto;
+}
+
+.map-iframe {
+    max-width: 100%;
+    height: 450px; /* Maintain a consistent height */
+    display: block;
+    margin: 40px auto; /* Add top and bottom spacing and center horizontally */
+    border-radius: 10px; /* Optional: add some rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add a subtle shadow */
 }
 
 footer {
